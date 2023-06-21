@@ -72,8 +72,7 @@ li {
 }
 
 .photo {
-  background-color: black;
-  background-clip: border-box;
+  border: solid 117px black;
 }
 
 
@@ -84,6 +83,24 @@ li {
   width: 600px;
   color: white;
   background-color: black;
-  padding: 100px;
+  padding: 100px 50px;
 
+}
+
+.footer {
+  background-color: black;
+}
+
+.base {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.one, .two, .three {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  flex-basis: 100%;
+  text-align: center;
 }
