@@ -32,58 +32,66 @@ font-family: 'Lato', sans-serif;
 header {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  height: 200px;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
 
 .logo {  
   text-align: center;
-  justify-content: flex-start;
-  max-width: 100%;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
 ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  margin: 0;
-  padding: 0;
   background-color: black;
+  justify-content: space-between;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
 li {
-  font-size: 48px;
+  display: flex;
+  font-size: 32px;
   color: white;
-  width: 250px;
   text-align: center;
-  padding:70px 25px 70px 25px;
+  padding:20px 20px 20px 20px;
+  flex-shrink: 1;
 }
 
 
 .heroImg {
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
+  margin: 40px 0px;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  flex-wrap: wrap;
 }
 
 .photo {
-  border: solid 117px black;
+  border: solid black;
+  border-width: 119px 20px 120px 20px;
+}
+
+.photo img {
+  display: block;
 }
 
 
 
 .about {
-  font-size: 24px;
+  font-size: 20px;
   font-family: 'Lato', sans-serif;
-  width: 600px;
+  width: 350px;
   color: white;
   background-color: black;
-  padding: 100px 50px;
+  padding: 73px 20px 75px 20px;
 
 }
 
@@ -95,12 +103,14 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .one, .two, .three {
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
-  flex-basis: 100%;
   text-align: center;
+  font-weight: 100;
 }
