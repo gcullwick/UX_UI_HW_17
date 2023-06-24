@@ -132,7 +132,7 @@ div.logo {
 .headerSkills, .headerWork {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 5px;
 }
 
@@ -152,7 +152,7 @@ div.logo {
   font-family: 'Lato', sans-serif;
   margin: 0px;
   padding: 20px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .skillsList {
@@ -164,7 +164,7 @@ div.logo {
   margin-top: 0;
   list-style-type: circle;
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 p.mainText {
@@ -183,6 +183,7 @@ p.mainText {
 
 .thick {
   font-weight: 900;
+  font-size: 24px;
 }
 
 
@@ -195,11 +196,13 @@ p.mainText {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+  resize: none;
 }
 
 .containerListWork {
   display: flex;
   justify-content: center;
+  resize: none;
 }
 
 .listWork {
@@ -208,18 +211,71 @@ p.mainText {
   list-style-type: circle;
   list-style-position: inside;
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
   flex-direction: column;
+  resize: none;
 }
 
 .workItem {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
+  resize: none;
 
 }
 
 /*Contact*/
+
+.contactContainer {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 200px 1fr;
+  grid-template-areas:
+    "a a"
+    "b c"
+    "d d";
+    justify-content: center;
+    align-items: center;
+}
+
+.getIn {
+  grid-area: a;
+  display: flex;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  justify-content: center;
+}
+
+.linkedIn {
+  grid-area: b;
+  cursor: pointer;
+  scale: 25%;
+}
+
+.phone {
+  grid-area: c;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.containerButton {
+  grid-area: d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactButton {
+  grid-area: d;
+  width: 250px;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 /*Footer*/
